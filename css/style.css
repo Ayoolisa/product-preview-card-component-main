@@ -164,6 +164,10 @@ body {
     color: hsl(228, 45%, 44%); 
 }
 
+.attribution a:hover { 
+    color: var(--very-dark-blue); 
+}
+
 
 
 
