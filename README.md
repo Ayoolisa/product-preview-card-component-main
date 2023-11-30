@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-landing-page-for-a-product-preview-component-using-css-grid-BHv7hra08H)
-- Live Site URL: [Add live site URL here](https://product-preview-card-component-main-one-omega.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-for-a-product-preview-component-using-css-grid-BHv7hra08H]
+- Live Site URL: [https://product-preview-card-component-main-one-omega.vercel.app/)]
 
 ### Built with
 
