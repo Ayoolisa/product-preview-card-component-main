@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-for-a-product-preview-component-using-css-grid-BHv7hra08H]
-- Live Site URL: [https://product-preview-card-component-main-one-omega.vercel.app/)]
+- Live Site URL: [https://product-preview-card-component-main-one-omega.vercel.app/]
 
 ### Built with
 
