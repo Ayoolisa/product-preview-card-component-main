@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Montagu+Slab:500,700);
 
 :root {
-    --primary-color: #192a3d;
     --dark-cyan: hsl(158, 36%, 37%);
+    --very-dark-cyan: hsl(157, 39%, 15%);
     --cream: hsl(30, 38%, 92%);
     --very-dark-blue: hsl(212, 21%, 14%);
     --dark-grayish-blue: hsl(228, 12%, 48%);
@@ -136,9 +136,11 @@ body {
 }
 
 .product__button:hover #order-btn {
-    color: var(--dark-cyan);
-    background-color: var(--white);
-    border: 2px solid var(--dark-cyan);
+    background-color: var(--very-dark-cyan);
+}
+
+.product__button:active #order-btn {
+    background-color: var(--very-dark-cyan);
 }
 
 #order-btn {
