@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,700);
+@import url(https://fonts.googleapis.com/css?family=Montagu+Slab:500,700);
+
+:root {
+    --primary-color: #192a3d;
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0; border: 0; margin: 0;
+    transition: all .3s ease-out 0s;
+}
+
+section {
+    padding: 2rem 10%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cream);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product__container {
+    min-height: 50vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    position: relative;
+}
+
+.product__content {
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.image__product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image__product img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.product__content {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2rem 10%;
+}
+
+.product__title {
+    color: var(--very-dark-blue);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product__title h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 2rem;
+}
+
+.product__title h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: 'Montagu Slab', serif;
+    color: var(--primary-color);
+}
+
+.product__description p {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 2rem;
+    line-height: 4rem;
+    text-align: justify;
+}
+
+.product__price {
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--dark-cyan);
+    position: relative;
+}
+
+.product__price #old__price {
+    position: absolute;
+    top: 50%;
+    transform: translate(30%, -50%);
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    margin-right: 1rem;
+}
+
+.product__button {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.product__button #order-btn i {
+    margin-right: 1rem;
+}
+
+.product__button:hover #order-btn {
+    color: var(--dark-cyan);
+    background-color: var(--white);
+    border: 2px solid var(--dark-cyan);
+}
+
+#order-btn {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white);
+    padding: 2rem 10rem;
+    background-color: var(--dark-cyan);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.attribution { 
+    font-size: 2rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width: 1440px) {
+    html {
+        font-size: 55%;
+    }
+    
+    .product__container {
+        min-height: 100%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        position: relative;
+    }
+
+    .product {
+        display: flex;
+        flex: 1 1 45rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;  
+        margin: 5%;   
+    }
+
+    .product__title {
+        color: var(--very-dark-blue);
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .product__title h1 {
+        font-size: 1.5rem;
+        margin-bottom:  .5rem;
+    }
+
+    .product__title h2 {
+        font-size: 3rem;
+    }
+
+    .product__description p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .product__price {
+        font-size: 2.5rem;
+    }
+
+    .product__price #old__price {
+        position: absolute;
+        top: 50%;
+        transform: translate(30%, -50%);
+        font-size: 1rem;
+        margin-right: .1rem;
+    }
+
+    .product__button {
+        margin-top: 3rem;
+    }
+
+    #order-btn {
+        font-size: 1.5rem;
+        padding: 1rem 4rem;
+    }
+
+    .attribution { 
+        font-size: 1.5rem; 
+        position: absolute;
+        /* top: 0; */
+        bottom: 1%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 650px) {
+    .product {
+        display: flex;
+        flex: 1 1 45rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;  
+        margin: 5%;
+    }
+
+    .product__container {
+        margin-top: -30%;
+        min-height: 20vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+        position: relative;
+    }
+    
+    .image__product img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+    }
+
+    .product__content {
+        padding: 5rem;
+        position: absolute;
+        top: 55%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom: 2rem;
+    }
+
+    .product__title h1 {
+        font-size: 2.5rem;
+        margin-bottom:  .5rem;
+    }
+    
+    .product__title h2 {
+        font-size: 5rem;
+    }
+
+    .product__description p {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    .product__price {
+        font-size: 5rem;
+    }
+
+    .product__price #old__price {
+        position: absolute;
+        top: 50%;
+        transform: translate(30%, -50%);
+        font-size: 2rem;
+        margin-right: .1rem;
+    }
+
+    #order-btn {
+        font-size: 3rem;
+        padding: 2rem 11rem;
+    }
+
+    .attribution { 
+        font-size: 1.3rem; 
+        position: absolute;
+    }
+}
